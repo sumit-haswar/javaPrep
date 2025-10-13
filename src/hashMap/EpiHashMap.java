@@ -1,7 +1,7 @@
 package hashMap;
 import java.util.*;
 
-public class epiHashMap {
+public class EpiHashMap {
 
     public static Map<String, List<String>> findAnagrams(List<String> input) {
         Map<String, List<String>> result = new HashMap<>();
