@@ -1,8 +1,10 @@
-public class Node {
-    public String value;
-    public Node next;
-    public Node prev;
-    public Node(String val, Node nxt, Node prev) {
+package models;
+
+public class Node<T> {
+    public T value;
+    public Node<T> next;
+    public Node<T> prev;
+    public Node(T val, Node<T> nxt, Node<T> prev) {
         this.value = val;
         this.next = nxt;
         this.prev = prev;
@@ -12,11 +14,10 @@ public class Node {
         StringBuilder sb = new StringBuilder();
         Node curr = head;
         while (curr != null) {
-            sb.append(curr.value);
+            sb.append(curr.value.toString());
             curr = curr.next;
         }
 
         return sb.toString();
-
     }
 }
